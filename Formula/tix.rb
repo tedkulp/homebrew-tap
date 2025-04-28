@@ -11,7 +11,7 @@ class Tix < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tedkulp/tix/releases/download/v0.2.1/tix_0.2.1_darwin_amd64.tar.gz"
-      sha256 "4bf9df03abe913a915a2e5567038ca453a64dca6a10e15135fb2e188b07d0f55"
+      sha256 "ad04b6d93bf710f64c65988ab205ab775bbee3a4a74d258455e4fc9eb4fe0a3b"
 
       def install
         bin.install "tix"
@@ -19,7 +19,7 @@ class Tix < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tedkulp/tix/releases/download/v0.2.1/tix_0.2.1_darwin_arm64.tar.gz"
-      sha256 "8b46b216a706fd28e1ae18089eac0f08afcd5fd02df01ddd727c8f54e353f66a"
+      sha256 "30fc1ddff81c5710d57f1b2cd52ab00d1b53c1816c75e8b8ae5da5bd8de9a5c3"
 
       def install
         bin.install "tix"
@@ -31,7 +31,7 @@ class Tix < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/tedkulp/tix/releases/download/v0.2.1/tix_0.2.1_linux_amd64.tar.gz"
-        sha256 "b6a7ed5dc478941129d9bd20050cbd6c9a6efd2e5efbd55f114acfe31bd454aa"
+        sha256 "733922516fc5693b826fb337ac544344d6c808b05eb866304a214bc4a1893a92"
 
         def install
           bin.install "tix"
@@ -41,7 +41,7 @@ class Tix < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/tedkulp/tix/releases/download/v0.2.1/tix_0.2.1_linux_arm64.tar.gz"
-        sha256 "f42112cd46c54a07e346f7600a722278be0952d800b3c78689ec589390215a04"
+        sha256 "5ede383ccb701245e47a99f912efbca2ca9cb49042a82272da5bdc746adba4c3"
 
         def install
           bin.install "tix"
