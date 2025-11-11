@@ -5,21 +5,21 @@
 class Tix < Formula
   desc "A CLI tool for creating tickets and branches in Git repositories"
   homepage "https://github.com/tedkulp/tix"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tedkulp/tix/releases/download/v0.4.0/tix_0.4.0_darwin_amd64.tar.gz"
-      sha256 "199e61cd0add5648da78c61a14479f3220ed1abb3f5136ac3b2a7ffb7b37ec59"
+      url "https://github.com/tedkulp/tix/releases/download/v0.4.1/tix_0.4.1_darwin_amd64.tar.gz"
+      sha256 "8bd2411d638422d54988567303ba8a89d1921be8fdaac514be4cbb7621ee5328"
 
       def install
         bin.install "tix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tedkulp/tix/releases/download/v0.4.0/tix_0.4.0_darwin_arm64.tar.gz"
-      sha256 "d32b875e4b4908e38f2a65f96e0420c4901d82d3c851d359b54e7456fcc360b7"
+      url "https://github.com/tedkulp/tix/releases/download/v0.4.1/tix_0.4.1_darwin_arm64.tar.gz"
+      sha256 "be639ebf48e96bda5a4d1158b9846a8d4c891347f3ae29420a2689b9ce551c14"
 
       def install
         bin.install "tix"
@@ -28,16 +28,16 @@ class Tix < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/tedkulp/tix/releases/download/v0.4.0/tix_0.4.0_linux_amd64.tar.gz"
-      sha256 "c29d8a42795a0d78ccf1117db6ea93270ca64fc45827e8a949ff637461c00b38"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/tedkulp/tix/releases/download/v0.4.1/tix_0.4.1_linux_amd64.tar.gz"
+      sha256 "50a97b40bef4f56b7840ca6d73624134008a33a912d0efcb77e4d624dcf6e067"
       def install
         bin.install "tix"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/tedkulp/tix/releases/download/v0.4.0/tix_0.4.0_linux_arm64.tar.gz"
-      sha256 "38849da3b5a1767e213de1702c85095387a4ce02e1c75fed3f6870ea94f80d17"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/tedkulp/tix/releases/download/v0.4.1/tix_0.4.1_linux_arm64.tar.gz"
+      sha256 "f172d67d71ec867834bfe94c5c9c3594e265d58f2c27ab62b2eeda6470da13e1"
       def install
         bin.install "tix"
       end
