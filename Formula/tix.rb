@@ -5,21 +5,21 @@
 class Tix < Formula
   desc "A CLI tool for creating tickets and branches in Git repositories"
   homepage "https://github.com/tedkulp/tix"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tedkulp/tix/releases/download/v0.4.1/tix_0.4.1_darwin_amd64.tar.gz"
-      sha256 "8bd2411d638422d54988567303ba8a89d1921be8fdaac514be4cbb7621ee5328"
+      url "https://github.com/tedkulp/tix/releases/download/v0.5.0/tix_0.5.0_darwin_amd64.tar.gz"
+      sha256 "e8333e28793d7100f645f9e66dc7fb6bb530d9c17f0b3b15e5b86992887786e6"
 
       def install
         bin.install "tix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tedkulp/tix/releases/download/v0.4.1/tix_0.4.1_darwin_arm64.tar.gz"
-      sha256 "be639ebf48e96bda5a4d1158b9846a8d4c891347f3ae29420a2689b9ce551c14"
+      url "https://github.com/tedkulp/tix/releases/download/v0.5.0/tix_0.5.0_darwin_arm64.tar.gz"
+      sha256 "9df11578c8055d8ea79836aa1360bf6ce6cee3b12cce51034c659ee37a220c64"
 
       def install
         bin.install "tix"
@@ -29,15 +29,15 @@ class Tix < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tedkulp/tix/releases/download/v0.4.1/tix_0.4.1_linux_amd64.tar.gz"
-      sha256 "50a97b40bef4f56b7840ca6d73624134008a33a912d0efcb77e4d624dcf6e067"
+      url "https://github.com/tedkulp/tix/releases/download/v0.5.0/tix_0.5.0_linux_amd64.tar.gz"
+      sha256 "334a21771e2928baf4233ba4764e41dd6ec51e5ca8a05727ba7d9c4a64785729"
       def install
         bin.install "tix"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tedkulp/tix/releases/download/v0.4.1/tix_0.4.1_linux_arm64.tar.gz"
-      sha256 "f172d67d71ec867834bfe94c5c9c3594e265d58f2c27ab62b2eeda6470da13e1"
+      url "https://github.com/tedkulp/tix/releases/download/v0.5.0/tix_0.5.0_linux_arm64.tar.gz"
+      sha256 "c122b13f5c55b6c69b0ea051c27c1a2ddfc56641e395155e387522def74acf8f"
       def install
         bin.install "tix"
       end
