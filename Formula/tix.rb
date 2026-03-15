@@ -5,21 +5,21 @@
 class Tix < Formula
   desc "A CLI tool for creating tickets and branches in Git repositories"
   homepage "https://github.com/tedkulp/tix"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tedkulp/tix/releases/download/v0.7.0/tix_0.7.0_darwin_amd64.tar.gz"
-      sha256 "1915a23a289457cd8dafdef75a0748f6b768a6d42e735792345db61040df5702"
+      url "https://github.com/tedkulp/tix/releases/download/v0.7.1/tix_0.7.1_darwin_amd64.tar.gz"
+      sha256 "dd9c3b97783be7f2170399b14ab2b51f12ed0d92a30064c1c681e0ef3e530fd5"
 
       define_method(:install) do
         bin.install "tix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tedkulp/tix/releases/download/v0.7.0/tix_0.7.0_darwin_arm64.tar.gz"
-      sha256 "39c5ac8f05269c9c5dfac0f77badd5bb07a88460bf7dcc4a35d288cfe7bb035e"
+      url "https://github.com/tedkulp/tix/releases/download/v0.7.1/tix_0.7.1_darwin_arm64.tar.gz"
+      sha256 "cf6390e020875a33b5a6bcd90d78432633181daa23d6043ffc2f710e41e82857"
 
       define_method(:install) do
         bin.install "tix"
@@ -29,15 +29,15 @@ class Tix < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tedkulp/tix/releases/download/v0.7.0/tix_0.7.0_linux_amd64.tar.gz"
-      sha256 "ca473f3c3492e0de9afb93ff1c870e3c0076e146215f4b4c08c9d0700aafb86a"
+      url "https://github.com/tedkulp/tix/releases/download/v0.7.1/tix_0.7.1_linux_amd64.tar.gz"
+      sha256 "13def407e4757076c779a0016768e306fb5c81498d9438a318a45151580c463b"
       define_method(:install) do
         bin.install "tix"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tedkulp/tix/releases/download/v0.7.0/tix_0.7.0_linux_arm64.tar.gz"
-      sha256 "32f8baee2d9d02f49b1d8fee5f5e48125524725c6be53b9da6b57e329a869f8b"
+      url "https://github.com/tedkulp/tix/releases/download/v0.7.1/tix_0.7.1_linux_arm64.tar.gz"
+      sha256 "32a8a2a40087819f3530944a4c00c7c090b7efd1a60b6eee72275e4ee065494d"
       define_method(:install) do
         bin.install "tix"
       end
