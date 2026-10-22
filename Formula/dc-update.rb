@@ -5,21 +5,21 @@
 class DcUpdate < Formula
   desc "An opinionated script for updating large docker-compose based systems"
   homepage "https://github.com/tedkulp/dc-update"
-  version "2.0.6"
+  version "2.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tedkulp/dc-update/releases/download/v2.0.6/dc-update_Darwin_x86_64.tar.gz"
-      sha256 "17f6fe21c9d2a66f143e159d779635434431dcc0d34b742ddb6f08ece954a048"
+      url "https://github.com/tedkulp/dc-update/releases/download/v2.1.0/dc-update_Darwin_x86_64.tar.gz"
+      sha256 "3798249e13b2ce3ef5e1a37ceeab7134e264aae7aeeb5f7dab2c86ff55363318"
 
       define_method(:install) do
         bin.install "dc-update"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tedkulp/dc-update/releases/download/v2.0.6/dc-update_Darwin_arm64.tar.gz"
-      sha256 "5a053ca54d6ce75bb15c11bb56b495d3c48f93f3e7b7e4f806f796b48baed5c3"
+      url "https://github.com/tedkulp/dc-update/releases/download/v2.1.0/dc-update_Darwin_arm64.tar.gz"
+      sha256 "ba0483041adb29931bcd68f32b6f129bdb4e8e5f5b0a6b3197baf1b2277d7a07"
 
       define_method(:install) do
         bin.install "dc-update"
@@ -29,15 +29,15 @@ class DcUpdate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tedkulp/dc-update/releases/download/v2.0.6/dc-update_Linux_x86_64.tar.gz"
-      sha256 "4879d7243c151db5e829b8fb9e0e115a071418fc0ceaf0ab421ed152d8db43d9"
+      url "https://github.com/tedkulp/dc-update/releases/download/v2.1.0/dc-update_Linux_x86_64.tar.gz"
+      sha256 "21ef973a9dd3360faaf3d12497d1c9d00c7542812c9012d7975a0414c6e38ed1"
       define_method(:install) do
         bin.install "dc-update"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tedkulp/dc-update/releases/download/v2.0.6/dc-update_Linux_arm64.tar.gz"
-      sha256 "c1dcfd01218f758095b96f35a34fe439536b2a2e28a48301331dfb1d1734a2f6"
+      url "https://github.com/tedkulp/dc-update/releases/download/v2.1.0/dc-update_Linux_arm64.tar.gz"
+      sha256 "3a0378d552a6bb40e8a061d7b259a6bbb7d0c112097df31de32b348ca5e339d7"
       define_method(:install) do
         bin.install "dc-update"
       end
